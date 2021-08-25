@@ -11,14 +11,7 @@ screen.color(Medici_Ivory)
 screen.grid(rows=30, cols=30, helpers=False)
 
 
-# character movement
-def move(velocity, direction):
-    print('the character will move ' + str(direction) + ' for ' + str(velocity))
-
-
 def character(x, y):
-    x = screen.width() / 2
-    y = screen.height() / 2
     return Character(screen, x, y)
 
 
@@ -45,6 +38,7 @@ def keydown(key):
         running = False
 
 
+# creating the character
 doodle = character(screen.width() / 2, screen.height() / 2)
 # run method
 running = True
